@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Sathyan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-11 03:08:23 PM"/>
+        <attribute name="created" value="U2F0aHlhbjtERVNLVE9QLVJRUDFQSzk7MjAyMy0wOS0wNDswMzo0Mzo0MiBQTTszMDk1"/>
+        <attribute name="edited" value="U2F0aHlhbjtERVNLVE9QLVJRUDFQSzk7MjAyMy0wOS0xMTswMzowODoyMyBQTTsyOzMyMDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, x, y" type="Integer" array="False" size=""/>
+            <declare name="A" type="Integer" array="True" size="6"/>
+            <for variable="i" start="0" end="5" direction="inc" step="1">
+                <input variable="A[i]"/>
+            </for>
+            <input variable="x"/>
+            <assign variable="y" expression="A[0]*X^5+A[1]*X^4+A[2]*X^3+A[3]*X^2+A[4]*X^1+A[5]"/>
+            <if expression="y&lt;=100">
+                <then>
+                    <output expression="&quot;the output is less than hundred&quot;" newline="True"/>
+                    <output expression="y" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;the output is geater than hundred&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
